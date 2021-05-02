@@ -1,0 +1,57 @@
+.sidebar-btn {
+    position: relative;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #A4A6B3;
+    cursor: pointer;
+    padding: 12px;
+    border-left: 12px solid transparent;
+    transition: all ease 0.5s;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+
+    .btn-icon {
+
+        // margin-right: 24px;
+        padding: 12px;
+        border-radius: 8px;
+        svg {
+            fill: #EA7C69;
+
+        }
+    }
+    &.active {
+        color: #DDE2FF;
+        border-left: 12px solid #1F1D2B;
+        background-color: #252836;
+        &::before, &::after {
+            position: absolute;
+            top: -14px;
+            right: -1px;
+            // display: block;
+            content: url('../../assets/images/icons/sidebarActiv.svg');
+        }
+        &::after {
+            transform: rotateY(180deg) rotateZ(180deg);
+            bottom: -14px;
+            right: -1px;
+        }
+
+        .btn-icon {
+            background-color: #EA7C69;
+            svg {
+                fill: #fff;
+                
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.wrapper {
+    display: flex;
+    .main {
+        padding: 24px 24px 0 24px;
+        width: 627px;
+        .header {
+            margin-bottom: 58px;
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 633px;
+                margin-bottom: 24px;
+                &-left {
+    
+                   h1 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 140%;
+                    color: #FFFFFF;
+                   } 
+                   h4 {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #E0E6E9;    
+                   } 
+                }
+                &-right {
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                    }
+                    input {
+                        padding: 14px 14px 14px 42px;
+                        background: #2D303E;
+                        border: 1px solid #393C49;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        &::placeholder {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 140%;
+                            color: #ABBBC2;
+                        }
+                        
+                    }
+                }
+            }
+            &-midl {
+                width: 633px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid rgba(189, 183, 183,0.09);
+                button {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: #FFFFFF;
+                    margin-right: 30px;
+                    // margin-bottom: 13px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+                    padding-bottom: 13px;
+                    border-bottom: 3px solid transparent;
+                    transition: all ease 0.5s;
+                    &:hover {
+                        color: #EA7C69;
+                        
+                    }
+                    &:active {
+                        border-bottom: 3px solid #EA7C69;
+                    }
+                    &.actve {
+                        border-bottom: 3px solid #EA7C69;
+                    }
+                }
+            }
+            &-bottom {
+                width: 633px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 24px;
+                &-left {
+                    h3 {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 140%;
+                        color: #FFFFFF;
+                    }
+                }
+                &-right {
+                    &-select {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: #FFFFFF;
+                        width: 100px;
+                        height: 48px;
+                        left: 532px;
+                        top: 0px;
+                        cursor: pointer;
+                        background: #1F1D2B;
+                        border: 1px solid #393C49;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        .food-cards {
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 380px;
+            overflow-y: scroll;
+            box-sizing: border-box;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    
+            
+        }
+    }
+}

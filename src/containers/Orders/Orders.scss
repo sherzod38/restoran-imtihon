@@ -1,0 +1,194 @@
+.orders {
+  &.closed {
+    // display: none;
+  }
+  padding: 12px 12px 0 12px;
+  box-sizing: border-box;
+  background-color: #1f1d2b;
+  // width: 100%;
+  & h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &-button {
+    & button {
+      padding: 7px 12px;
+      background: transparent;
+      border-radius: 8px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      color: #ea7c69;
+      border: 1px solid rgba(222, 222, 222, 0.09);
+      margin-right: 8px;
+      margin-bottom: 24px;
+      outline: none;
+      cursor: pointer;
+      &:hover,
+      &:active {
+        background: #ea7c69;
+        color: #fff;
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(222, 222, 222, 0.09);
+    &-left {
+      & h4 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ffffff;
+      }
+    }
+    &-right {
+      display: flex;
+      & h4 {
+        color: #fff;
+        margin-left: 43px;
+      }
+    }
+  }
+  &-wrapper {
+    height: 300px;
+    border-bottom: 1px solid rgba(222, 222, 222, 0.09);
+    overflow-y: scroll;
+    margin-bottom: 7px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &-food {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      &-left {
+        display: flex;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+          margin-right: 5px;
+        }
+        &-title {
+          h4 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            color: #ffffff;
+          }
+          span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            color: #abbbc2;
+          }
+        }
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          color: #ffffff;
+          padding: 14px 20px;
+          background-color: #2d303e;
+          border: 1px solid #393c49;
+          box-sizing: border-box;
+          border-radius: 8px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: right;
+          color: #ffffff;
+          margin-left: 20px;
+        }
+      }
+    }
+    &-delate {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      & h4 {
+        font-style: normal;
+        font-weight: normal;
+        // width: 297px;
+        font-size: 14px;
+        line-height: 140%;
+        color: #e0e6e9;
+        padding: 14px 88px 14px 14px;
+        background: #2d303e;
+        border: 1px solid #393c49;
+        box-sizing: border-box;
+        border-radius: 8px;
+      }
+      & button {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        margin-left: 16px;
+        padding: 0;
+        cursor: pointer;
+        & img {
+          margin: 0;
+          padding: 14px;
+          border: 1px solid #ff7ca3;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-bottom {
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      & h5 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        color: #abbbc2;
+      }
+      & h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: right;
+        color: #ffffff;
+      }
+    }
+    & button {
+      width: 100%;
+      height: 48px;
+      outline: none;
+      border: none;
+      background: #ea7c69;
+      box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
